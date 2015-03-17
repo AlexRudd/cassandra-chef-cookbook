@@ -77,7 +77,7 @@ default['cassandra']['trickle_fsync_interval_in_kb'] = 10_240
 
 default['cassandra']['listen_address'] = node['ipaddress']
 default['cassandra']['broadcast_address'] = node['ipaddress']
-default['cassandra']['rpc_address'] = '0.0.0.0'
+default['cassandra']['rpc_address'] = node['ipaddress']
 
 default['cassandra']['rpc_port'] = '9160'
 default['cassandra']['storage_port'] = 7000
